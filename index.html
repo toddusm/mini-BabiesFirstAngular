@@ -10,6 +10,9 @@
 
 <body ng-controller="mainCtrl">
 <h1>My Friends</h1>
+<form ng-submit="newFriend()">
+  <input ng-model="newFriend" />
+  </form>
 <div ng-repeat="friend in friends">
   <p>{{friend}}</p>
 </div>
